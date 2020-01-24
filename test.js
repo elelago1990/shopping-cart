@@ -1,4 +1,4 @@
-import { calcularTotal } from './index.js';
+import { calcularTotal, calcularPeso } from './index.js';
 import { equal } from "assert";
 
 describe(('Cálculo del total'), () => {
@@ -16,5 +16,8 @@ describe(('Cálculo del total'), () => {
     {producto:"huevo", precio:30, cantidad:12 }
     
   ]),360) });
- 
+});
+
+describe(('Calculo del peso'),()=>{
+   it('carrito vacio', ()=> {equal(calcularPeso([]),0)});
 })

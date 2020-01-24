@@ -20,4 +20,8 @@ export function calcularTotal(carrito) {
   return total;
 }
 
+export function calcularPeso(carrito){
+
+  return 0;
+}
 
